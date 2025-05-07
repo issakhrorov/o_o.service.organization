@@ -1,0 +1,17 @@
+server:
+  http2:
+    enabled: true
+  ssl:
+    enabled: false
+spring:
+  application:
+    name: service.organization
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/o_o_organization
+    username: issakhrorov
+    password: 0000
+
+jimmer:
+  language: kotlin
+  dialect: org.babyfish.jimmer.sql.dialect.PostgresDialect

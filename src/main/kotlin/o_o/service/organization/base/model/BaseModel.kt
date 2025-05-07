@@ -1,0 +1,1 @@
+package o_o.service.organization.base.modelimport org.babyfish.jimmer.sql.*import java.util.*@MappedSuperclassinterface BaseModel {  @Id  @GeneratedValue(strategy = GenerationType.SEQUENCE)  val id: Long  val deleted: Boolean  val createdBy: String?  val created: Date?  val modifiedBy: String?  val modified: Date?}

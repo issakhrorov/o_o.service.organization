@@ -1,0 +1,24 @@
+export o_o.service.organization.model.organization.Organization
+
+import java.util.Date
+
+input OrganizationInput {
+  #allScalars
+
+  -deleted
+  -createdBy
+  -created
+  -modifiedBy
+  -modified
+
+  -status
+//  -links
+
+  accountId as account_id
+  countryId as country_id
+  embeddedLandingPage as embedded_landing_page
+
+  activity_type_ids: List<Long>
+  links_id: Long
+  activate: Boolean
+}

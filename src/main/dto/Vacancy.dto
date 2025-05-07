@@ -1,0 +1,38 @@
+export o_o.service.organization.model.vacancy.Vacancy
+
+import java.util.Date
+
+input VacancyInput {
+  #allScalars
+
+  -deleted
+  -createdBy
+  -created
+  -modifiedBy
+  -modified
+
+//  -organization
+  -status
+  -experienceRange
+  -requiredEducationType
+  -jobShift
+  -workingHours
+
+  salaryFrom as salary_from
+  salaryTo as salary_to
+  validUntil as valid_until
+  workingHours as working_hours
+
+  organization_id: Long
+  experience_range: Int
+  required_education_type: Int
+  job_shift: Int
+
+  skill_ids: List<Long>
+  responsibility_list: List<String>
+  matching_resume_ids: List<Long>
+  required_language_ids: List<Long>
+  requirements_list: List<String>
+  privileges_list: List<String>
+  job_types: List<Int>
+}
